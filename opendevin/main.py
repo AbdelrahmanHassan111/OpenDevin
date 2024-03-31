@@ -5,9 +5,9 @@ from typing import Type
 
 import agenthub  # noqa F401 (we import this to get the agents registered)
 from opendevin import config  
-from opendevin.agent import Agent
-from opendevin.controller import AgentController
-from opendevin.llm.llm import LLM
+from .agent import Agent
+from .controller import AgentController
+from .llm.llm import LLM
 
 def read_task_from_file(file_path: str) -> str:
     """Read task from the specified file."""
